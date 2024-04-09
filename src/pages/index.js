@@ -1,8 +1,8 @@
-import { Box } from "@mui/material";
-import { Inter } from "next/font/google";
+import { data } from "@/assessts/data";
+import BannerSlider from "@/components/bannerSlider";
+import Secured from "@/components/secured";
+import { Box, Container, Grid } from "@mui/material";
 import Head from "next/head";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -13,7 +13,24 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-     <Box></Box>
+      <Box>
+        <Container>
+          <BannerSlider />
+          <Box sx={{ mt: 5 }}>
+            <Grid container>
+              {data.secured.map((val, i) => (
+                <Grid item lg={4} key={i}>
+                  <Secured
+                    img={val.img}
+                    description={val.description}
+                    title={val.title}
+                  />
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+        </Container>
+      </Box>
     </>
   );
 }

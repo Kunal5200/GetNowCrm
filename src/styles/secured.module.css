@@ -1,0 +1,14 @@
+.arrowIcon:hover {
+  transform: translateX(8px);
+}
+.arrowIcon {
+  transition: 0.5s ease all;
+}
+
+.banner1 {
+  background-image: url("../../public/images/backgroundImages/bannerSlider2.png");
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
