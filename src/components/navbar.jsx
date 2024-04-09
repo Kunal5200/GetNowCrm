@@ -1,5 +1,8 @@
 import React from "react";
-import { Box, Card, Container, Typography } from "@mui/material";
+import { Box, Card, Container, Typography, Stack } from "@mui/material";
+import Link from "next/link";
+import { routes } from "@/assessts/routes";
+import { Search } from "@mui/icons-material";
 const Navbar = () => {
   return (
     <div>
@@ -27,7 +30,27 @@ const Navbar = () => {
               GetNow CRM
             </Typography>
           </Box>
-          <Box>1</Box>
+          <Box>
+            <Stack direction={"row"} alignItems={"center"} spacing={3}>
+              {routes.map((val, i) => (
+                <Link href={val.url} key={i} className="link">
+                  <Typography
+                    color={"#6a85a6"}
+                    sx={{
+                      ":hover": {
+                        color: "#ACD7FF",
+                      },
+                      fontSize: 16,
+                      fontWeight: 550,
+                    }}
+                  >
+                    {val.label}
+                  </Typography>
+                </Link>
+              ))}
+              <Search />
+            </Stack>
+          </Box>
         </Container>
       </Card>
     </div>
