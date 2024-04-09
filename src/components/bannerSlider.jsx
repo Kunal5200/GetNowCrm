@@ -3,7 +3,9 @@ import Carousel from 'react-responsive-carousel'
 const BannerSlider = () => {
   return (
     <div>
-      <Carousel></Carousel>
+      <Carousel>
+        
+      </Carousel>
     </div>
   )
 }
