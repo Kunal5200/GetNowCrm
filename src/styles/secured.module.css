@@ -7,7 +7,16 @@
 
 .banner1 {
   background-image: url("../../public/images/backgroundImages/bannerSlider2.png");
-  height: 100vh;
+  height: 120vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #ecf5fe;
+  width: 100%;
+}
+.banner2 {
+  background-image: url("../../public/images/backgroundImages/bannerSlider1.png");
+  height: 120vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
