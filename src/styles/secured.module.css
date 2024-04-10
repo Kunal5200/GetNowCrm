@@ -7,8 +7,10 @@
 
 .banner1 {
   background-image: url("../../public/images/backgroundImages/bannerSlider2.png");
-  height: 90vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: #ecf5fe;
+  width: 100%;
 }

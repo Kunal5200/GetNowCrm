@@ -14,8 +14,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Box>
+        <BannerSlider />
         <Container>
-          <BannerSlider />
           <Box sx={{ mt: 5 }}>
             <Grid container>
               {data.secured.map((val, i) => (
