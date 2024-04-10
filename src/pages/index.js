@@ -1,6 +1,7 @@
 import { data } from "@/assessts/data";
 import BannerSlider from "@/components/bannerSlider";
 import CreditSlider from "@/components/creditSlider";
+import KeyFeatures from "@/components/keyFeatures";
 import Secured from "@/components/secured";
 import { Box, Container, Grid } from "@mui/material";
 import Head from "next/head";
@@ -31,9 +32,12 @@ export default function Home() {
             </Grid>
           </Box>
         </Container>
-        <Box sx={{mt:4}}>
+        <Box sx={{ mt: 4 }}>
           <CreditSlider />
         </Box>
+        <Container>
+          <KeyFeatures />
+        </Container>
       </Box>
     </>
   );
