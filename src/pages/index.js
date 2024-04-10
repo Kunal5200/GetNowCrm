@@ -1,5 +1,6 @@
 import { data } from "@/assessts/data";
 import BannerSlider from "@/components/bannerSlider";
+import CreditSlider from "@/components/creditSlider";
 import Secured from "@/components/secured";
 import { Box, Container, Grid } from "@mui/material";
 import Head from "next/head";
@@ -16,7 +17,7 @@ export default function Home() {
       <Box>
         <BannerSlider />
         <Container>
-          <Box sx={{ mt: 5 }}>
+          <Box sx={{ mt: 15 }}>
             <Grid container>
               {data.secured.map((val, i) => (
                 <Grid item lg={4} key={i}>
@@ -30,6 +31,9 @@ export default function Home() {
             </Grid>
           </Box>
         </Container>
+        <Box sx={{mt:4}}>
+          <CreditSlider />
+        </Box>
       </Box>
     </>
   );

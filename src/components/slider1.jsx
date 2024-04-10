@@ -5,13 +5,13 @@ const Slider1 = () => {
   return (
     <div>
       <Box className={styles.banner1}>
-        <Box sx={{ mb: 3 }}>
+        <Box sx={{ mb: 15 }}>
           <Stack
             direction={"row"}
             alignItems={"center"}
             spacing={2}
             justifyContent={"center"}
-            pt={3}
+            pt={5}
             mb={3}
           >
             {/* <img src={dootedLine.src} /> */}
