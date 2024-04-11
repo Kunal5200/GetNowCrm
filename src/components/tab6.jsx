@@ -1,33 +1,105 @@
-import support from "@/backgroundImages/customerSupport.svg";
-import { Box, Grid, Stack, Typography, Button } from "@mui/material";
+import fees from "@/backgroundImages/fees.svg";
+import { Done } from "@mui/icons-material";
+import {
+  Box,
+  Grid,
+  Stack,
+  Typography,
+  Button,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+} from "@mui/material";
 
 const Tab6 = () => {
+  const text = [
+    {
+      label: "transaction fee (successful and declined),",
+    },
+    {
+      label: "refund fee,",
+    },
+    {
+      label: "chargeback fee,",
+    },
+    {
+      label: "reserve",
+    },
+  ];
+  const text2 = [
+    {
+      label: "Setup fee",
+    },
+    {
+      label: "Monthly fee,",
+    },
+    {
+      label: "processing fee,",
+    },
+    {
+      label: "Any other fees",
+    },
+  ];
   return (
     <div>
       <Box>
         <Grid container spacing={4} mt={4}>
           <Grid item lg={4} textAlign={"center"}>
-            <img src={support.src} width={200} />
+            <img src={fees.src} width={200} />
           </Grid>
           <Grid item lg={8}>
             <Typography fontSize={24} color={"#516E90"} fontWeight={700} mb={3}>
-              Customer support
+              Fees
             </Typography>
             <Grid container spacing={4}>
               <Grid item lg={6}>
                 <Typography fontSize={16} color={"#757575"}>
-                  Do you recall the annoying feeling that you went to your
-                  Internet banking and one time you wanted just to talk to
-                  someone and instead you had either an automatic response
-                  system or F&Q with a loop and you end up being upset, lost and
-                  wasted time? Yeah. You don’t want that.
+                  Not true in payment processing. You HAVE TO know in advance
+                  the entire fee structure. Moreover, you also have to
+                  understand it. Having said that, fees have to be simple and
+                  clear.
                 </Typography>
+                <List
+                  sx={{
+                    "& .MuiTypography-root": {
+                      color: "#6987AB",
+                      fontWeight: 700,
+                    },
+                  }}
+                >
+                  {text.map((val, i) => (
+                    <ListItem disablePadding key={i}>
+                      <ListItemIcon sx={{ minWidth: 30 }}>
+                        <Done sx={{ fontSize: 14, fill: "#008000" }} />
+                      </ListItemIcon>
+                      <ListItemText primary={val.label} />
+                    </ListItem>
+                  ))}
+                </List>
               </Grid>
               <Grid item lg={6}>
                 <Typography fontSize={16} color={"#757575"}>
-                  Automatisation is great when it works well, is simple and user
-                  friendly.
+                  Investigationes demonstraverunt lectores legere me lius quod
+                  ii legunt saepius.
                 </Typography>
+                <List
+                  sx={{
+                    "& .MuiTypography-root": {
+                      color: "#6987AB",
+                      fontWeight: 700,
+                    },
+                  }}
+                >
+                  {text2.map((val, i) => (
+                    <ListItem disablePadding key={i}>
+                      <ListItemIcon sx={{ minWidth: 30 }}>
+                        <Done sx={{ fontSize: 14, fill: "#008000" }} />
+                      </ListItemIcon>
+                      <ListItemText primary={val.label} />
+                    </ListItem>
+                  ))}
+                </List>
               </Grid>
             </Grid>
           </Grid>
