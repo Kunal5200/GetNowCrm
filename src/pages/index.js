@@ -4,9 +4,13 @@ import BannerSlider from "@/components/bannerSlider";
 import Bussiness from "@/components/bussiness";
 import Counter from "@/components/counter";
 import CreditSlider from "@/components/creditSlider";
+import GrowingBussiness from "@/components/growingbussiness";
 import KeyFeatures from "@/components/keyFeatures";
 import Secured from "@/components/secured";
+import SoftwarePricing from "@/components/softwarepricing";
+import Solution from "@/components/solution";
 import Support from "@/components/support";
+import System from "@/components/system";
 import { Box, Container, Grid } from "@mui/material";
 import Head from "next/head";
 
@@ -60,6 +64,18 @@ export default function Home() {
         <Container>
           <KeyFeatures />
         </Container>
+        <Box>
+          <System />
+        </Box>
+        <Box>
+          <SoftwarePricing />
+        </Box>
+        <Box>
+          <GrowingBussiness />
+        </Box>
+        <Box>
+          <Solution />
+        </Box>
       </Box>
     </>
   );
