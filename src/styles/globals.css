@@ -39,3 +39,12 @@ body {
 .css-1aquho2-MuiTabs-indicator {
   height: 0 !important;
 }
+
+.cloudTransparent {
+  background-image: url("../../public/images/backgroundImages/cloudTransparent.png");
+  height: 90vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
