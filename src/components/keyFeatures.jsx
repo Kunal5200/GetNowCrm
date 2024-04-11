@@ -4,6 +4,7 @@ import TabPanel from "./tab-panel";
 import backgroundCloud from "@/backgroundImages/cloudTransparent.png";
 import dial from "@/backgroundImages/dial.svg";
 import Tab1 from "./tab1";
+import Tab2 from "./tab2";
 const KeyFeatures = () => {
   const tabs = [
     {
@@ -69,6 +70,9 @@ const KeyFeatures = () => {
       >
         <TabPanel index={0} value={value}>
           <Tab1 />
+        </TabPanel>
+        <TabPanel index={1} value={value}>
+          <Tab2 />
         </TabPanel>
       </Box>
     </div>
