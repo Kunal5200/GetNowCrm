@@ -1,10 +1,12 @@
-import React, { useState } from "react";
-import { Tabs, Tab, Grid, Box, Typography } from "@mui/material";
+import { Box, Tab, Tabs } from "@mui/material";
+import { useState } from "react";
 import TabPanel from "./tab-panel";
-import backgroundCloud from "@/backgroundImages/cloudTransparent.png";
-import dial from "@/backgroundImages/dial.svg";
 import Tab1 from "./tab1";
 import Tab2 from "./tab2";
+import Tab3 from "./tab3";
+import Tab4 from "./tab4";
+import Tab5 from "./tab5";
+import Tab6 from "./tab6";
 const KeyFeatures = () => {
   const tabs = [
     {
@@ -24,6 +26,26 @@ const KeyFeatures = () => {
     },
     {
       label: 6,
+    },
+  ];
+  const tabSection = [
+    {
+      children: <Tab1 />,
+    },
+    {
+      children: <Tab2 />,
+    },
+    {
+      children: <Tab3 />,
+    },
+    {
+      children: <Tab4 />,
+    },
+    {
+      children: <Tab5 />,
+    },
+    {
+      children: <Tab6 />,
     },
   ];
   const [value, setValue] = useState(0);
@@ -61,19 +83,14 @@ const KeyFeatures = () => {
       <Box
         sx={{
           mt: 4,
-          backgroundImage: `url(${backgroundCloud})`,
-          height: "100%",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
         }}
+        className="cloudTransparent"
       >
-        <TabPanel index={0} value={value}>
-          <Tab1 />
-        </TabPanel>
-        <TabPanel index={1} value={value}>
-          <Tab2 />
-        </TabPanel>
+        {tabSection.map((val, i) => (
+          <TabPanel index={i} value={value}>
+            {val.children}
+          </TabPanel>
+        ))}
       </Box>
     </div>
   );
