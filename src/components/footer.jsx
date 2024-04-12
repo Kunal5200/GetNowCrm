@@ -115,12 +115,7 @@ const Footer = () => {
           </Grid>
           <Grid item xs={3}>
             <Box>
-              <Typography
-                variant="h1"
-                fontSize={"25px"}
-                fontWeight={700}
-                textAlign={"right"}
-              >
+              <Typography variant="h1" fontSize={"25px"} fontWeight={700}>
                 Contact us
               </Typography>
               <Box
@@ -128,17 +123,12 @@ const Footer = () => {
                   my: 4,
                 }}
               >
-                <Typography
-                  variant="h6"
-                  fontSize={"17px"}
-                  fontWeight={500}
-                  textAlign={"right"}
-                >
+                <Typography variant="h6" fontSize={"17px"} fontWeight={500}>
                   info@spellcrm.com
                 </Typography>
               </Box>
             </Box>
-            <Box textAlign={"right"}>
+            <Box>
               <Button
                 sx={{
                   backgroundColor: "green",
