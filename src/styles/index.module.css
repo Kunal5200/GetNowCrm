@@ -1,0 +1,41 @@
+.background {
+  text-align: center;
+  background: #ecf5fe
+    url(https://spellcrm.com/wp-admin/admin-ajax.php?action=kc_get_thumbn&type=filter_url&id=%2Fwp-content%2Fuploads%2F2017%2F08%2Fclouds16.png)
+    0% 0% / cover repeat scroll;
+  width: 100%;
+  padding: 5rem 0;
+}
+
+.bussinessBackground {
+  background: #0083ff
+    url(https://spellcrm.com/wp-content/uploads/2017/08/clouds18.png) 0% 0% /
+    auto repeat scroll;
+  padding: 50px 0;
+}
+.button {
+  background-color: green;
+  color: #fff;
+  border: none;
+  width: 50%;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.pricing_box {
+  background-color: #000;
+  border-radius: 15px;
+  padding: 3.5rem 0;
+  height: 90%;
+  cursor: pointer;
+}
+.pricing_box:hover {
+  background-color: #fff;
+  color: grey;
+}
+.image {
+  border: 1px solid transparent;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
