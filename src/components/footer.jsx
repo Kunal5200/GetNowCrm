@@ -6,6 +6,7 @@ const Footer = () => {
     <Box
       sx={{
         backgroundColor: "#3e4d50",
+        mt: 10,
       }}
     >
       <Container>
@@ -15,6 +16,7 @@ const Footer = () => {
             color: "#fff",
             py: 12,
           }}
+          spacing={10}
         >
           <Grid item xs={5}>
             <Box>
@@ -42,11 +44,7 @@ const Footer = () => {
             </Box>
           </Grid>
           <Grid item xs={4}>
-            <Box
-              sx={{
-                paddingLeft: "5rem",
-              }}
-            >
+            <Box>
               <Typography variant="h1" fontSize={"25px"} fontWeight={700}>
                 Userful Links
               </Typography>
@@ -116,30 +114,38 @@ const Footer = () => {
             </Box>
           </Grid>
           <Grid item xs={3}>
-            <Box
-              sx={{
-                paddingLeft: "5rem",
-              }}
-            >
-              <Typography variant="h1" fontSize={"25px"} fontWeight={700}>
+            <Box>
+              <Typography
+                variant="h1"
+                fontSize={"25px"}
+                fontWeight={700}
+                textAlign={"right"}
+              >
                 Contact us
               </Typography>
               <Box
                 sx={{
-                  py: 4,
+                  my: 4,
                 }}
               >
-                <Typography variant="h6" fontSize={"17px"} fontWeight={500}>
+                <Typography
+                  variant="h6"
+                  fontSize={"17px"}
+                  fontWeight={500}
+                  textAlign={"right"}
+                >
                   info@spellcrm.com
                 </Typography>
               </Box>
             </Box>
-            <Box>
+            <Box textAlign={"right"}>
               <Button
                 sx={{
                   backgroundColor: "green",
                   color: "#fff",
-                  paddingLeft: "5rem",
+                  width: 200,
+                  borderRadius: 20,
+                  p: 1.5,
                 }}
               >
                 SEND A MESSAGE
